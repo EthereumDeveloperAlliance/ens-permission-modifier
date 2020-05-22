@@ -15,8 +15,4 @@ contract Counter is Permission {
     ) public isPermissioned(_sub, domain) {
         counter += 1;
     }
-
-    function destroy() public {
-        selfdestruct(msg.sender);
-    }
 }
